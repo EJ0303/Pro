@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitBlioteca</title>
+    <style>
+        /* Estilos del cuerpo */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('imagenes/fondo.png'); /* URL de la imagen de fondo */
+            background-size:auto; /* La imagen cubre toda la pantalla */
+        }
+        
+
+        /* Encabezado */
+        header {
+            background-color:#9ba8ab;
+            color: #2c2c38;
+            padding: 10px 0;
+        }
+
+        /* Logo e imagen del encabezado */
+        .header-logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 30px;
+        }
+
+        .header-title {
+            color: white;
+            font-size: 22px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 25px;
+            
+        }
+
+        /* Redes sociales y buscador */
+        .header-social {
+            display: inline-block;
+            float: right;
+            margin-right: 20px;
+        }
+
+        .header-social img {
+            width: 40px;
+            margin-left: 10px;
+        }
+
+        .header-search {
+            float: right;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .header-search input {
+            padding: 5px;
+        }
+
+        .header-search button {
+            background-color: #ffffff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* Navegación principal */
+        nav {
+            background: #072d44;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ccd0cf;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #a07621;
+        }
+
+        /* Sección de imagen de fondo */
+        .hero {
+            background-image: url('https://www.ufm.edu/biblioteca.jpg'); /* Usa una imagen similar o de fondo */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Botones sobre la imagen */
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .hero-buttons a {
+            background-color: #06141b;
+            color: #ccd0cf;
+            padding: 20px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-buttons a:hover {
+            background-color: #0e2d3c;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #9ba8ab;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer img {
+            width: 80px;
+            display: inline-block;
+            vertical-align:baseline;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="header-logo">
+            <img src="imagenes/logo.jpg" alt="Logo UFM" width="60">
+        </div>
+        <div class="header-title">
+            <h1>Farmacia AcGal</h1>
+            <p>"Asegura tu salud."</p>
+        </div>
+        <div class="header-social">
+            <img src="imagenes/tecnm.png" alt="Tecnm">
+            <img src="" alt="5B">
+        </div>
+        
+    </header>
+
+    <!-- Navegación principal -->
+    <nav>
+        <a href="#">MEDICAMENTOS</a>
+       
+    </nav>
+
+    <!-- Imagen de fondo con botones -->
+    <div class="hero">
+        <div class="hero-buttons">
+            <a href="medicamento.html">Eliminar</a>
+            <a href="prestamo.html">Actualizar</a>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Farmacia AcGal</p>
+        <p>Tel: +502 2338 7821 | Fax: +502 2332 2620</p>
+        <p>Horario: Lunes a Viernes: 7:00 am - 8:00 pm | Sábado: 8:00 am - 12:00 pm</p>
+        <img src="imagenes/tecnmti.png" alt="Logo UFM" width="60">
+    </footer>
+
+</body>
+</html>

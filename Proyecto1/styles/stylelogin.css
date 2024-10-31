@@ -1,0 +1,151 @@
+/* Global Reset */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #f5e4de, #d4d8e7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.div-form {
+  max-width: 420px;
+  padding: 30px;
+  margin: auto;
+  background: #ffffff;
+  border: 1px solid #e0e4e8;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+/* Icon Color */
+i {
+  color: #7389a5;
+}
+
+/* Form Container */
+.forms-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+/* User Image */
+.img-usuario {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #e0f7f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and Inputs */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #333;
+  background: #f0f4f8;
+  border: 1px solid #ccd1d9;
+  border-radius: 8px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:focus {
+  background: #ffffff;
+  border-color: #b0c4de;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  background-color: #73a6e3;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #517bbf;
+  transform: scale(1.02);
+}
+
+.button-registro {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #517bbf;
+  font-size: 13px;
+  border: 1px solid #517bbf;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.button-registro:hover {
+  background-color: #517bbf;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  color: #517bbf;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #24476b;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .div-form {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .img-usuario {
+    width: 70px;
+    height: 70px;
+  }
+}
+

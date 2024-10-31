@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrate</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+      <form class="form-usuario" method="POST" action="pro.php">
+        <div>
+          <h1 class="title-form">Registro De Usuario</h1>
+          <div class="div-img">
+            <img class="img-usuario" src="https://cdn.icon-icons.com/icons2/827/PNG/512/user_icon-icons.com_66546.png" alt="">
+          </div>
+        </div>
+        
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
+        
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" required>
+        
+        <label for="Correo">Correo:</label>
+        <input type="email" id="Correo" name="Correo" placeholder="Correo" required>
+        
+        <label for="Contra">Contraseña:</label>
+        <input type="password" id="Contra" name="Contra" placeholder="Contraseña" required>
+        
+        <label for="Telefono">Teléfono:</label>
+        <input type="text" id="Telefono" name="Telefono" placeholder="Teléfono" required>
+        
+        <input id="button-form" type="submit" value="Registrar">
+        <a href="index.html">Iniciar Sesión</a>
+      </form>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="styles/stylelogin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        function validarFormulario(event) {
+            const email = document.querySelector('input[name="nombreUsuario"]').value;
+            const contraseña = document.getElementById('contraseña').value;
+
+            // Validar que los campos no estén vacíos
+            if (!email || !contraseña) {
+                event.preventDefault(); // Evita que se envíe el formulario
+                alert('Por favor, complete todos los campos.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="div-form">
+        <form class="forms-login" action="procesar_login.php" onsubmit="validarFormulario(event)" method="POST">
+            <h1>Iniciar sesión</h1>
+            <label class="div-email">
+                <i class='bx bx-envelope'></i>
+                <input type="text" placeholder="Email" name="nombreUsuario" required>
+            </label>
+            <div class="div-img">
+                <img class="img-usuario" src="https://cdn.icon-icons.com/icons2/827/PNG/512/user_icon-icons.com_66546.png" alt="">
+            </div>
+            <label class="div-password">
+                <i class='bx bxs-lock'></i>
+                <input type="password" name="Contra" id="contraseña" placeholder="Ingrese su contraseña" required>
+            </label>
+            <button type="submit">Iniciar Sesión</button>
+            <button class="button-registro"><a href="registro.html">Registrarse</a></button>
+        </form>
+    </div>
+</body>
+</html>
